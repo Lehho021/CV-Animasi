@@ -1,0 +1,375 @@
+:root{
+	--bgcolor:#beb8ac;
+	--blue:#2fb7fe;
+	--black:#3D3F42;
+	--white:#f4f7ff;
+	--gray:#d8dce4;
+	--lightgray:#8e9095;
+}
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: monospace;
+}
+body{
+	background: whitesmoke;
+}
+.clearfix{
+	clear: both;
+}
+.resume-box{
+	width: 800px;
+	height: 1300px;
+	margin: 100px auto;
+	background: var(--white);
+	box-shadow: 5px 21px 20px 20px #3d3f4238;
+}
+.left-section{
+	background-color: black;
+	width: 250px;
+	height: 1300px;
+	float: left;
+}
+.profile{
+	overflow: hidden;
+	position: relative;
+}
+.blue-box{
+    width: 257px;
+    height: 407px;
+    background-color: cornflowerblue;
+    margin-left: -100px;
+    transform: rotateZ(48deg);
+    margin-top: -178px;
+    
+}
+.profile-img{
+	    position: absolute;
+    z-index: 9;
+    width: 120px;
+    height: 120px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 50%;
+    border: 3px solid var(--gray);
+}
+.name{
+    color: var(--gray);
+    text-align: center;
+    margin-top: -34px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.name span{
+	color: cornflowerblue;
+}
+.n-p{
+	width: 220px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 7px;
+    border-bottom: 1px solid var(--gray);
+    border-top: 1px solid var(--gray);
+    color: var(--gray);
+    margin-top: 11px;
+    text-transform: uppercase;
+}
+.info1{
+	margin-top: 50px;
+}
+.heading{
+	width: 220px;
+    margin: 0 auto;
+    padding: 2px;
+    border-bottom: 1px solid var(--gray);
+    border-top: 1px solid var(--gray);
+    color: var(--gray);
+    margin-top: 11px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.p1{
+	color: var(--gray);
+	width: 184px;
+	margin: 0 auto;
+	margin-top: 25px;
+	font-size: 15px;
+    line-height: 10px;
+}
+.p1 span{
+    font-size: 12px;
+}
+.p7{
+    color: var(--gray);
+    width: 184px;
+    margin: 0 auto;
+    margin-top: 25px;
+    font-size: 15px;
+    line-height: 30px;
+}
+.p7 span{
+	font-size: 12px;
+}
+.span1 img{
+	background: white;
+    width: 30px;
+    padding: 6px;
+    border-radius: 16px;
+    float: left;
+    margin-right: 10px;
+}
+.right-section{
+	padding: 40px 30px;
+    background: var(--white);
+    width: 68%;
+    float: left;
+    height: 1300px;
+}
+.right-heading img{
+	background: #3d3f42;
+    width: 36px;
+    padding: 7px;
+    border-radius: 17px;
+    float: left;
+    display: inline-block;
+    margin-top: -6px;
+}
+.p2{
+    margin: 0 auto;
+    padding: 2px;
+    border-bottom: 1px solid var(--lightgray);
+    border-top: 1px solid var(--lightgray);
+    color: var(--black);
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-left: 50px;
+    line-height: 18px;
+}
+.p3{
+	margin-top: 20px;
+	color: var(--black);
+    font-family: monospace;
+	text-align: justify;
+	word-spacing: -4px;
+}
+.left{
+	width: 50%;
+	float: left;
+}
+.right{
+	width: 50%;
+	float: left;
+}
+.lr-box{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.p4{
+	font-size: 14px;
+	font-weight: 600;
+}
+.p5{
+	font-size: 12px;
+	color: var(--lightgray);
+}
+.s-box{
+
+	width: 50%;
+    float: left;
+    padding: 5px 20px 0px 5px;
+}
+
+.p6{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.h-img {
+    margin-top: 25px;
+    width: 45px;
+    margin-right: 45px;
+}
+
+.icon{
+    position: page;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+
+}
+
+.tombol{
+
+    display: inline-block;
+    float: left;
+    width: 90px;
+    height: 90px;
+    background: #f1f1f1;
+    margin: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    color: black;
+}
+
+.tombol i{
+    transition: 0.2s linear;
+    font-size: 26px;
+    line-height: 90px;
+
+}
+
+.tombol:hover i{
+    transform: scale(2);
+    color: #f1f1f1;
+
+}
+
+.tombol:before{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: -110px;
+    top: 90%;
+    transform: rotate(45deg);
+    background: #3498db;
+}
+
+.tombol:hover::before {
+    left: -10%;
+    top: -10%;
+    animation: aaa 0.7s 1;
+}
+
+@keyframes aaa {
+    0%{
+        left: -110%;
+        top: -90%;
+    }
+    50%{
+        left: -10%;
+        top: -30%;
+    }
+    100%{
+        left: -10%;
+        top: -10%;
+    }
+
+}
+
+::selection{
+    color: #fff;
+    background: #6665ee;
+}
+.skill-bars{
+    border-radius: 10px;
+}
+.skill-bars .bar{
+    margin: 0px;
+}
+.skill-bars .bar:first-child{
+    margin-top: 0px;
+}
+.skill-bars .bar .info{
+    margin-bottom: 0px;
+}
+.skill-bars .bar .info span{
+    font-weight: 500;
+    font-size: 17px;
+    opacity: 0;
+    animation: showText 0.5s 1s linear forwards;
+}
+@keyframes showText {
+    100%{
+        opacity: 1;
+    }
+}
+.skill-bars .bar .progress-line{
+    height: 10px;
+    width: 100%;
+    background: #f0f0f0;
+    position: relative;
+    transform: scaleX(0);
+    transform-origin: left;
+    border-radius: 10px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
+    0 1px rgba(255,255,255,0.8);
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+@keyframes animate {
+    100%{
+        transform: scaleX(1);
+    }
+}
+.bar .progress-line span{
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background-color: cornflowerblue;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+.bar .progress-line.c span{
+    width: 60%;
+}
+.bar .progress-line.html span{
+    width: 30%;
+}
+.bar .progress-line.java span{
+    width: 30%;
+}
+.bar .progress-line.css span{
+    width: 20%;
+}
+
+.progress-line span::before{
+    position: absolute;
+    content: "";
+    top: -10px;
+    right: 0;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+.progress-line span::after{
+    position: absolute;
+    top: -28px;
+    right: 0;
+    font-weight: 500;
+    background: #000;
+    color: #fff;
+    padding: 1px 8px;
+    font-size: 12px;
+    border-radius: 3px;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+@keyframes showText2 {
+    100%{
+        opacity: 1;
+    }
+}
+.progress-line.c span::after{
+    content: "60%";
+}
+.progress-line.html span::after{
+    content: "30%";
+}
+.progress-line.java span::after{
+    content: "30%";
+}
+.progress-line.css span::after{
+    content: "20%";
+}
